@@ -85,7 +85,7 @@ median(new_data_steps$steps)
 library(lattice)
 data <- data.frame(day = weekdays(as.Date(data$date)), daystatus = "NA", 
     data)
-data$daystatus <- factor(ifelse(activity_full$day %in% c("Saturday", 
+data$daystatus <- factor(ifelse(data$day %in% c("Saturday", 
     "Sunday"), "weekend", "weekday"))
 
 
